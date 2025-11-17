@@ -27,12 +27,12 @@ permalink: index.html
             Entrée gratuite
           </p>
           {% if site.registrations == true %}
-            <p class="u-mbs-lg">
+            <p class="u-mbs-md">
               <a 
                 class="c-button"
                 href="{{ site.registrationsUrl }}">
                 Inscriptions
-                {% include "svg/button-arrow.svg" %}
+                {% include "svg/icon-arrow.svg" %}
               </a>
             </p>
           {% endif %}
@@ -43,7 +43,7 @@ permalink: index.html
   </div>
 
   <div class="c-section">
-    <div class="l-container">
+    <div class="l-container" data-onscroll="appearFromBottom">
 
       <div class="l-split l-split--half@lg">
         <div>

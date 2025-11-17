@@ -40,7 +40,7 @@
 
   font-weight: 300;
   line-height: 1.38;
-  font-family: "Georgia", "Times New Roman", "Times", serif;
+  font-family: var(--fontstack-alt);
   font-style: normal;
   text-transform: uppercase;
   margin-block-end: 18px;

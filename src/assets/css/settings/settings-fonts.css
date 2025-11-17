@@ -4,6 +4,7 @@
 
 :root {
   --fontstack-main: "Mona Sans", system-ui, sans-serif;
+  --fontstack-alt: "Times Nw Roman", "Times", serif;
 
   --fontsize-sm: calc(14 / 16 * 1rem);
   --fontsize-base: clamp(1rem, 0.92rem + 0.367vi, 20 / 16 * 1rem);
