@@ -10,7 +10,7 @@
     "css:dev": "lightningcss --bundle \"./src/assets/css/main.css\" -o \"./dist/assets/css/main.css\"",
     "js:dev": "esbuild \"./src/assets/js/main.js\" --bundle --target=es2020 --outfile=\"./dist/assets/js/main.bundle.js\"",
     "css:prod": "lightningcss --minify --bundle --browserslist \"./src/assets/css/main.css\" -o \"./dist/assets/css/main.css\"",
-    "js:prod": "esbuild \"./src/assets/js/main.js\" --bundle --minify --target=es2020 --outfile=\"./dist/assets/js/main.js\"",
+    "js:prod": "esbuild \"./src/assets/js/main.js\" --bundle --minify --target=es2020 --outfile=\"./dist/assets/js/main.bundle.js\"",
     "watch:css": "onchange \"./src/assets/css/**/*\" -- npm run css:dev",
     "watch:js": "onchange \"./src/assets/js/**/*\" -- npm run js:dev",
     "dev": "npm-run-all --parallel server watch:*",
