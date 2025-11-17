@@ -4,9 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.metaTitle }}</title>
-  <meta name="description" content="{{ site.metaDescription }}">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css">  
   <script type="module" src="assets/js/main.bundle.js"></script>
+
+  <meta name="description" content="{{ site.metaDescription }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:title" content="{{ site.metaTitle }}">
+  <meta property="og:description" content="{{ site.metaDescription }}">
+  <meta property="og:image" content="{{ site.url }}/assets/img/{{ site.metaImage }}">
 </head>
 <body>
   {% include "partials/siteheader.njk" %}
