@@ -13,7 +13,7 @@ const allQuotes = [
   },
   {
     text: "J'ai beau avoir fait mon master à Jacquard, ils me laissent entrer chaque année.",
-    author: "Un traître quand même",
+    author: "Un traître",
   },
   {
     text: "C'est sans doute ce nouveau cours mais les MM1B sont vraiment jeunes, non ?",
