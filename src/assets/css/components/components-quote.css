@@ -1,0 +1,71 @@
+/* ===================================
+=quote
+=================================== */
+
+.c-quote {
+  --quote-text-size: clamp(29 / 16 * 1rem, 1.572rem + 1.101vi, 41 / 16 * 1rem);
+  text-align: center;
+}
+
+.c-quote__actions {
+  margin-block-end: 12px;
+}
+
+.c-quote__trigger {
+  --trigger-color: var(--color-text-secondary);
+  --trigger-rotate: 0deg;
+
+  cursor: pointer;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: var(--trigger-color);
+  rotate: var(--trigger-rotate);
+
+  transition: color 0.2s ease-out, rotate 0.2s ease-out;
+
+  &:hover,
+  &:focus-visible {
+    --trigger-color: var(--color-accent);
+    --trigger-rotate: -9deg;
+  }
+}
+
+.c-quote__content {
+  margin: 0;
+}
+
+.c-quote__text {
+  margin: 0;
+
+  font-weight: 300;
+  line-height: 1.38;
+  font-family: "Georgia", "Times New Roman", "Times", serif;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-block-end: 18px;
+  color: var(--color-text-highlight);
+  font-size: var(--quote-text-size);
+
+  quotes: "“" "”";
+
+  & > p {
+    text-wrap: balance;
+  }
+
+  & > p:first-child::before {
+    content: open-quote;
+  }
+
+  & > p:last-child::after {
+    content: close-quote;
+  }
+
+  & > p:last-child {
+    margin-block-end: 0;
+  }
+}
+
+.c-quote__author {
+  color: var(--color-text-secondary);
+}

@@ -1,0 +1,10 @@
+/* ===================================
+=copyright
+=================================== */
+
+.c-copyright {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--fontsize-sm);
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+/* ===================================
+=fonts
+=================================== */
+
+:root {
+  --fontstack-main: "Mona Sans", system-ui, sans-serif;
+
+  --fontsize-sm: calc(14 / 16 * 1rem);
+  --fontsize-base: clamp(1rem, 0.92rem + 0.367vi, 20 / 16 * 1rem);
+  --fontsize-lg: clamp(20 / 16 * 1rem, 1.19rem + 0.275vi, 23 / 16 * 1rem);
+
+  --fontsize-h1: clamp(36 / 16 * 1rem, 1.648rem + 2.752vi, 66 / 16 * 1rem);
+  --fontsize-h2: clamp(32 / 16 * 1rem, 1.719rem + 1.284vi, 46 / 16 * 1rem);
+  --fontsize-h3: clamp(29 / 16 * 1rem, 1.719rem + 1.284vi, 36 / 16 * 1rem);
+}

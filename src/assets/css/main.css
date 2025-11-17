@@ -1,0 +1,39 @@
+@layer settings, base, layout, objects, components, utilities;
+
+/* SETTINGS */
+@import "settings/settings-colors.css" layer(settings);
+@import "settings/settings-fonts.css" layer(settings);
+@import "settings/settings-spacing.css" layer(settings);
+
+/* BASE */
+@import "base/base-reset.css" layer(base);
+@import "base/base-fonts.css" layer(base);
+@import "base/base-html.css" layer(base);
+@import "base/base-body.css" layer(base);
+@import "base/base-links.css" layer(base);
+
+/* OBJECTS */
+@import "objects/objects-fluidimg.css" layer(objects);
+
+/* LAYOUT */
+@import "layout/layout-grid.css" layer(layout);
+@import "layout/layout-split.css" layer(layout);
+@import "layout/layout-container.css" layer(layout);
+
+/* COMPONENTS */
+@import "components/components-section.css" layer(components);
+@import "components/components-partners.css" layer(components);
+@import "components/components-partner.css" layer(components);
+@import "components/components-titles.css" layer(components);
+@import "components/components-banner.css" layer(components);
+@import "components/components-button.css" layer(components);
+@import "components/components-speaker.css" layer(components);
+@import "components/components-quote.css" layer(components);
+@import "components/components-siteheader.css" layer(components);
+@import "components/components-sitefooter.css" layer(components);
+@import "components/components-copyright.css" layer(components);
+
+/* UTILITIES */
+@import "utilities/utilities-text-lengths.css" layer(utilities);
+@import "utilities/utilities-margins.css" layer(utilities);
+@import "utilities/utilities-sronly.css" layer(utilities);

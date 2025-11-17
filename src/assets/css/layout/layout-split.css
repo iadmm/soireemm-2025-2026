@@ -1,0 +1,29 @@
+/* ===================================
+=splits
+=================================== */
+
+.l-split {
+  --split-colgap: 18px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  column-gap: var(--split-colgap);
+}
+
+.l-split--half\@sm {
+  @media (width >= 500px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.l-split--half\@md {
+  @media (width >= 750px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.l-split--half\@lg {
+  @media (width >= 1024px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

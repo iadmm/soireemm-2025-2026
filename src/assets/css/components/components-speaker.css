@@ -1,0 +1,32 @@
+/* ===================================
+=speaker
+=================================== */
+
+.c-speaker {
+  --speaker-title-fontsize: clamp(26 / 16 * 1rem, 1.565rem + 0.275vi, 29 / 16 * 1rem);
+
+  display: block;
+}
+
+.c-speaker__media {
+  overflow: clip;
+  border-radius: 12px;
+  margin-block-end: 18px;
+}
+
+.c-speaker__name {
+  font-weight: 400;
+  font-size: var(--speaker-title-fontsize);
+  font-stretch: 75%;
+  color: var(--color-text-highlight);
+  margin-block-end: 3px;
+}
+
+.c-speaker__name > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.c-speaker__function {
+  color: var(--color-text-secondary);
+}

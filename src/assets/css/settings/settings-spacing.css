@@ -1,0 +1,13 @@
+/* ===================================
+=spacing
+=================================== */
+
+:root {
+  --spacing-2xs: 6px;
+  --spacing-xs: 12px;
+  --spacing-sm: 18px;
+  --spacing-base: 24px;
+  --spacing-md: 30px;
+  --spacing-lg: 36px;
+  --spacing-xl: 48px;
+}

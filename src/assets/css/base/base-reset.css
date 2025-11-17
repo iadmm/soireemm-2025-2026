@@ -1,0 +1,25 @@
+/* ===================================
+=kill start margin
+=================================== */
+
+*,
+*::before,
+*::after {
+  margin-block-start: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  line-height: 1.2;
+}
+
+:where(h1, h2, h3, h4) {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+button {
+  cursor: pointer;
+}

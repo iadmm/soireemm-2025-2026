@@ -1,0 +1,18 @@
+/* ======================================
+=links
+====================================== */
+
+a {
+  --link-underline-color: hsl(from var(--color-accent) h s l / 75%);
+
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.12lh;
+  text-decoration-color: var(--link-underline-color);
+
+  &:hover,
+  &:focus-visible {
+    --link-underline-color: var(--color-accent);
+  }
+}

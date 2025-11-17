@@ -1,0 +1,15 @@
+{% macro partner(params) %}
+  {% set logo = "assets/img/partners/" ~ params.logo %}
+  <div class="c-partner">
+    <a 
+      class="c-partner__link" 
+      href="{{ params.url }}">
+      <img 
+        class="o-fluidimg"
+        src="{{ logo }}"
+        width="400"
+        height="225" 
+        alt="{{ params.name }}">
+    </a>
+  </div>
+{% endmacro %}

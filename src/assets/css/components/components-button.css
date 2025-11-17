@@ -1,0 +1,30 @@
+/* ===================================
+=button
+=================================== */
+.c-button {
+  --button-surface: white;
+  --button-text: var(--color-surface-primary);
+
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 24px;
+  line-height: 1;
+  background-color: var(--button-surface);
+  color: var(--button-text);
+  border-radius: 999px;
+  font-weight: 500;
+  font-stretch: 75%;
+  font-size: var(--fontsize-lg);
+  text-decoration: none;
+
+  transition: background-color 0.2s ease-out;
+
+  &:hover,
+  &:focus-visible {
+    --button-surface: var(--color-accent-light);
+  }
+}

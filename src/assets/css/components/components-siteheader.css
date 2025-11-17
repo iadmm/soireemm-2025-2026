@@ -1,0 +1,8 @@
+/* ===================================
+=siteheader
+=================================== */
+
+.c-siteheader {
+  --header-padding: clamp(30px, 8vi, 60px);
+  padding-block: var(--header-padding);
+}

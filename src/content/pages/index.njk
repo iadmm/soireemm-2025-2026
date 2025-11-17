@@ -1,0 +1,113 @@
+---
+permalink: index.html
+---
+
+{% extends "layouts/base.njk" %}
+
+{% from "macros/speaker.njk" import speaker %}
+{% from "macros/partner.njk" import partner %}
+
+{% block content %}
+  <div class="c-section">
+    <div class="l-container">
+      
+      <div class="l-split  l-split--half@md">
+        <div>
+          <h2 class="c-h1"><time datetime="{{ site.eventDate|dateMachine }}">{{ site.eventDate|dateNumeric }}</time></h2>
+        </div>
+        <div>
+          <p>En ce début d'année 2026, quatre anciennes et anciens multitis partageront avec vous leurs parcours, leurs joies, leurs doutes et leurs victoires sur l'adversité. Pour nous remettre de nos émotions, nous poursuivrons les discussion autour d'un verre (ou deux) dans le foyer.</p>
+          <p>
+            <time
+              datetime="{{ site.eventDate|dateMachine }}">
+              {{ site.eventDate|dateFull }}
+            </time><br>
+            IAD Blocry, Grande Salle<br>
+            <time datetime="19:00">19h00</time> - <time datetime="23:00">23h00</time><br>
+            Entrée gratuite
+          </p>
+          {% if site.registrations == true %}
+            <p class="u-mbs-lg">
+              <a 
+                class="c-button"
+                href="{{ site.registrationsUrl }}">
+                Inscriptions
+                {% include "svg/button-arrow.svg" %}
+              </a>
+            </p>
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="l-container">
+
+      <div class="l-split l-split--half@lg">
+        <div>
+          <h2 class="c-h2 u-text-20ch">Une belle brochette d'anciennes et d'anciens.</h2>
+        </div>
+        <div>
+          {% for item in collections.speakers %}
+            {% if loop.first %}<ul class="l-grid l-grid--2cols@sm">{% endif %}
+              <li>
+                {{ speaker({
+                  image: item.data.image,
+                  name: item.data.name,
+                  surname: item.data.surname,
+                  function: item.data.function,
+                  url: item.data.url
+                }) }}
+              </li>
+            {% if loop.last %}<ul>{% endif %}
+          {% endfor %}
+        </div>
+      </div>      
+      
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="l-container l-container--md">
+
+      <random-quotes class="c-quote">
+        <div class="c-quote__actions js-quote-actions">
+          <button class="c-quote__trigger js-quote-trigger">
+            {% include "svg/icon-reload.svg" %}
+            <span class="u-sronly">Load new quote</span>
+          </button>
+        </div>
+        <figure class="c-quote__content">
+          <blockquote class="c-quote__text">
+            <p class="js-quote-text">J'ai beau avoir fait mon master à Jacquard, ils me laissent entrer chaque année ...</p>
+          </blockquote>
+          <figcaption 
+            class="c-quote__author js-quote-author">
+            Clément D'Août
+          </figcaption>
+        </figure>
+      </random-quotes>
+
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="l-container l-container--md">
+      
+      {% for item in partners %}
+        {% if loop.first %}<ul class="c-partners">{% endif %}
+          <li>
+            {{ partner({
+              url: item.url,
+              name: item.name,
+              logo: item.logo
+            }) }}
+          </li>
+        {% if loop.last %}</ul>{% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+{% endblock %}

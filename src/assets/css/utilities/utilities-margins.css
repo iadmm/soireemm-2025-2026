@@ -1,0 +1,71 @@
+/* ===================================
+=margins
+=================================== */
+
+/* x-small */
+.u-mbs-xs {
+  margin-block-start: var(--spacing-xs);
+}
+
+.u-mbe-xs {
+  margin-block-end: var(--spacing-xs);
+}
+
+.u-mis-xs {
+  margin-inline-start: var(--spacing-xs);
+}
+
+.u-mie-xs {
+  margin-inline-end: var(--spacing-xs);
+}
+
+/* small */
+.u-mbs-sm {
+  margin-block-start: var(--spacing-sm);
+}
+
+.u-mbe-sm {
+  margin-block-end: var(--spacing-sm);
+}
+
+.u-mis-sm {
+  margin-inline-start: var(--spacing-sm);
+}
+
+.u-mie-sm {
+  margin-inline-end: var(--spacing-sm);
+}
+
+/* medium */
+.u-mbs-md {
+  margin-block-start: var(--spacing-md);
+}
+
+.u-mbe-md {
+  margin-block-end: var(--spacing-md);
+}
+
+.u-mis-md {
+  margin-inline-start: var(--spacing-md);
+}
+
+.u-mie-md {
+  margin-inline-end: var(--spacing-md);
+}
+
+/* large */
+.u-mbs-lg {
+  margin-block-start: var(--spacing-lg);
+}
+
+.u-mbe-lg {
+  margin-block-end: var(--spacing-lg);
+}
+
+.u-mis-lg {
+  margin-inline-start: var(--spacing-lg);
+}
+
+.u-mie-lg {
+  margin-inline-end: var(--spacing-lg);
+}
