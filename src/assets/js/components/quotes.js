@@ -20,7 +20,7 @@ const allQuotes = [
     author: "Cédric Deru",
   },
   {
-    text: "Avoir tes anciens profs comme collègues ça ne te rajeuni pas.",
+    text: "Avoir mes anciens profs comme collègues ne me rajeuni pas vraiment.",
     author: "Thomas Scourneau",
   },
   {
