@@ -24,7 +24,7 @@
   align-self: center;
 
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.12;
   font-stretch: 75%;
   margin-block-end: 0.75em;
   font-size: clamp(26 / 16 * 1rem, 0.822rem + 3.67vi, 66 / 16 * 1rem);
@@ -36,8 +36,6 @@
 .c-banner__word {
   display: block;
   overflow: clip;
-  text-box-edge: text alphabetic;
-  text-box-trim: trim-both;
 
   & > span {
     display: block;
