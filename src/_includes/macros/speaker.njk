@@ -1,10 +1,11 @@
 {% macro speaker(params) %}
-  {% set img = "assets/img/speakers/" ~ params.image %}
+  {% set imgSrc = "assets/img/speakers/" ~ params.image %}
+  {% set imgSrcPixels = "assets/img/speakers/" ~ params.imagePixels %}
   <div class="c-speaker">
     <div class="c-speaker__media">
-      <a href="{{ params.url }}">
+      <a class="c-speaker__link" href="{{ params.url }}">
         <img 
-          src="{{ img }}"
+          src="{{ imgSrc }}"
           class="c-speaker__img  o-fluidimg"
           alt="{{ params.name }} {{ params.surname }}"
           width="800"

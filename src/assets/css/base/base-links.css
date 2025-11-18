@@ -3,7 +3,7 @@
 ====================================== */
 
 a {
-  --link-underline-color: hsl(from var(--color-accent) h s l / 75%);
+  --link-underline-color: hsl(from var(--color-accent) h s l / 60%);
 
   color: var(--color-accent);
   text-decoration: underline;

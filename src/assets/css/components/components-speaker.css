@@ -2,16 +2,54 @@
 =speaker
 =================================== */
 
+@property --percentage {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 5%;
+}
+
 .c-speaker {
   --speaker-title-fontsize: clamp(26 / 16 * 1rem, 1.565rem + 0.275vi, 29 / 16 * 1rem);
-
-  display: block;
+  --speaker-gradient-start: var(--color-red);
+  --speaker-gradient-two: var(--color-blue);
 }
 
 .c-speaker__media {
   overflow: clip;
   border-radius: 12px;
   margin-block-end: 18px;
+}
+
+.c-speaker__img {
+  filter: grayscale(1);
+}
+
+.c-speaker__link {
+  display: block;
+  position: relative;
+}
+
+.c-speaker__link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    to bottom,
+    var(--speaker-gradient-start) var(--percentage),
+    var(--speaker-gradient-two)
+  );
+  z-index: 2;
+  mix-blend-mode: multiply;
+
+  transition: --percentage 0.3s linear;
+}
+
+.c-speaker__link:hover::before {
+  --percentage: 25%;
+}
+
+.c-speaker__img {
+  z-index: 1;
 }
 
 .c-speaker__name {
