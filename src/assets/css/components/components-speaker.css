@@ -2,10 +2,10 @@
 =speaker
 =================================== */
 
-@property --percentage {
+@property --gradient-stop {
   syntax: "<percentage>";
   inherits: false;
-  initial-value: 5%;
+  initial-value: 6%;
 }
 
 .c-speaker {
@@ -21,7 +21,7 @@
 }
 
 .c-speaker__img {
-  filter: grayscale(1);
+  filter: grayscale(1) brightness(1.5);
 }
 
 .c-speaker__link {
@@ -35,17 +35,17 @@
   inset: 0;
   background-image: linear-gradient(
     to bottom,
-    var(--speaker-gradient-start) var(--percentage),
-    var(--speaker-gradient-two)
+    var(--speaker-gradient-start) var(--gradient-stop),
+    var(--speaker-gradient-two) calc(100% - var(--gradient-stop))
   );
   z-index: 2;
   mix-blend-mode: multiply;
 
-  transition: --percentage 0.3s linear;
+  transition: --gradient-stop 0.2s ease-out;
 }
 
 .c-speaker__link:hover::before {
-  --percentage: 25%;
+  --gradient-stop: 24%;
 }
 
 .c-speaker__img {
