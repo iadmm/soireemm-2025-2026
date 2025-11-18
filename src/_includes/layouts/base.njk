@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.metaTitle }}</title>
+  {# preload #}
+  <link rel="preload" as="font" href="assets/fonts/mona-sans-variable.woff2">
+  {# CSS and JS #}
   <link rel="stylesheet" href="assets/css/main.css">  
   <script type="module" src="assets/js/main.bundle.js"></script>
-
+  {# Open Graph #}
   <meta name="description" content="{{ site.metaDescription }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}">
