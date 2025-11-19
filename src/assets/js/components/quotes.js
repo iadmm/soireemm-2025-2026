@@ -16,7 +16,7 @@ const allQuotes = [
     author: "Un traître",
   },
   {
-    text: "C'est sans doute ce nouveau cours, mais les MM1B sont vraiment jeunes, non ?",
+    text: "C'est sans doute ce nouveau cours, mais les MM1B sont vraiment jeunes, non?",
     author: "Cédric Deru",
   },
   {
@@ -48,7 +48,7 @@ const allQuotes = [
     author: "Fabian Andry",
   },
   {
-    text: "Allez Caro, c'est quand même sympa quelques explosions, non ?",
+    text: "Allez Caro, c'est quand même sympa quelques explosions ...",
     author: "Damien Welsh",
   },
 ];
