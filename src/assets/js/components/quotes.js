@@ -28,7 +28,7 @@ const allQuotes = [
     author: "Fabrice Laroche",
   },
   {
-    text: "Nuke c'est pas hyper sympa comme nom quand on y pense ...",
+    text: "Nuke c'est presque Trumpien comme nom quand on y pense ...",
     author: "Caroline Voglaire",
   },
   {
@@ -36,8 +36,16 @@ const allQuotes = [
     author: "Nicolas Gillard",
   },
   {
-    text: "Pour rester zen, le CBD à la pause, y a que ça de vrai.",
+    text: "Pour rester zen en toutes circonstances, le CBD y a que ça de vrai.",
     author: "Rémi Vandenitte",
+  },
+  {
+    text: "Cette année, vous pouvez compter sur un ou deux saucissons de nos Ardennes.",
+    author: "Sylvia Minnaert",
+  },
+  {
+    text: "La progression stricement linéaire de l'âge de mes enfants devrait me permettre d'être des vôtres.",
+    author: "Fabian Andry",
   },
 ];
 
