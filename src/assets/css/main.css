@@ -11,6 +11,7 @@
 @import "base/base-html.css" layer(base);
 @import "base/base-body.css" layer(base);
 @import "base/base-links.css" layer(base);
+@import "base/base-animations.css" layer(base);
 
 /* OBJECTS */
 @import "objects/objects-fluidimg.css" layer(objects);

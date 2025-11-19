@@ -12,6 +12,17 @@
   --speaker-title-fontsize: clamp(26 / 16 * 1rem, 1.565rem + 0.275vi, 29 / 16 * 1rem);
   --speaker-gradient-start: var(--color-red);
   --speaker-gradient-two: var(--color-blue);
+
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      animation-timeline: view();
+      view-timeline-inset: 60px;
+      animation-name: scrollAppear;
+      animation-timing-function: ease-out;
+      animation-fill-mode: both;
+      animation-range: entry 60px cover 30%;
+    }
+  }
 }
 
 .c-speaker__media {

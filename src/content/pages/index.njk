@@ -51,8 +51,8 @@ permalink: index.html
         </div>
         <div>
           {% for item in collections.speakers %}
-            {% if loop.first %}<ul class="l-grid l-grid--2cols@sm">{% endif %}
-              <li>
+            {% if loop.first %}<ul class="c-speakers  l-grid l-grid--2cols@sm">{% endif %}
+              <li class="c-speakers__item">
                 {{ speaker({
                   image: item.data.image,
                   imagePixels: item.data.imagePixels,

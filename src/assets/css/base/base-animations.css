@@ -1,0 +1,10 @@
+/* ======================================
+=animations
+====================================== */
+
+@keyframes scrollAppear {
+  from {
+    opacity: 0;
+    translate: 0 120px;
+  }
+}
