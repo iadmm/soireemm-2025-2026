@@ -47,6 +47,10 @@ const allQuotes = [
     text: "La progression stricement linéaire de l'âge de mes enfants devrait me permettre d'être des vôtres.",
     author: "Fabian Andry",
   },
+  {
+    text: "Allez Caro, c'est quand même sympa quelques belles explosions, non ?",
+    author: "Damien Welsh",
+  },
 ];
 
 export { allQuotes };
