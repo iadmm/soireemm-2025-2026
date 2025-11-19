@@ -16,7 +16,7 @@ const allQuotes = [
     author: "Un traître",
   },
   {
-    text: "C'est sans doute ce nouveau cours mais les MM1B sont vraiment jeunes, non ?",
+    text: "C'est sans doute ce nouveau cours, mais les MM1B sont vraiment jeunes, non ?",
     author: "Cédric Deru",
   },
   {
@@ -28,7 +28,7 @@ const allQuotes = [
     author: "Fabrice Laroche",
   },
   {
-    text: "Nuke c'est presque Trumpien comme nom quand on y pense ...",
+    text: "Nuke ... c'est un peu violent comme nom de software quand on y pense.",
     author: "Caroline Voglaire",
   },
   {
@@ -36,7 +36,7 @@ const allQuotes = [
     author: "Nicolas Gillard",
   },
   {
-    text: "Pour rester zen en toutes circonstances, le CBD y a que ça de vrai.",
+    text: "Pour rester zen, le CBD c'était pas une mauvaise idée finalement.",
     author: "Rémi Vandenitte",
   },
   {
