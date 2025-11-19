@@ -21,7 +21,7 @@
 }
 
 .c-speaker__img {
-  filter: grayscale(1) brightness(1.5);
+  filter: grayscale(1);
 }
 
 .c-speaker__link {
@@ -39,7 +39,7 @@
     var(--speaker-gradient-two) calc(100% - var(--gradient-stop))
   );
   z-index: 2;
-  mix-blend-mode: multiply;
+  mix-blend-mode: color;
 
   transition: --gradient-stop 0.2s ease-out;
 }
