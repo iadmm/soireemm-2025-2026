@@ -48,7 +48,7 @@ const allQuotes = [
     author: "Fabian Andry",
   },
   {
-    text: "Allez Caro, c'est quand même sympa quelques belles explosions, non ?",
+    text: "Allez Caro, c'est quand même sympa quelques explosions, non ?",
     author: "Damien Welsh",
   },
 ];
