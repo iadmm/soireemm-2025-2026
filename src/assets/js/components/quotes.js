@@ -28,7 +28,7 @@ const allQuotes = [
     author: "Fabrice Laroche",
   },
   {
-    text: "Nuke ... c'est un peu violent comme nom de software quand on y pense.",
+    text: "Nuke ... c'est un peu violent comme software quand on y pense.",
     author: "Caroline Voglaire",
   },
   {
@@ -50,6 +50,10 @@ const allQuotes = [
   {
     text: "Allez Caro, c'est quand même sympa quelques explosions ...",
     author: "Damien Welsh",
+  },
+  {
+    text: "Alice Guy, c'est pas elle qui a inventé l'interface graphique?",
+    author: "Salvatore Bordonaro",
   },
 ];
 
