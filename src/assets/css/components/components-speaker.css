@@ -2,16 +2,9 @@
 =speaker
 =================================== */
 
-@property --gradient-stop {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 6%;
-}
-
 .c-speaker {
   --speaker-title-fontsize: clamp(26 / 16 * 1rem, 1.565rem + 0.275vi, 29 / 16 * 1rem);
-  --speaker-gradient-start: var(--color-red);
-  --speaker-gradient-two: var(--color-blue);
+  --speaker-overlay-color: var(--color-blue);
 
   @supports (animation-timeline: view()) {
     @media (prefers-reduced-motion: no-preference) {
@@ -25,6 +18,10 @@
   }
 }
 
+.c-speaker:hover .c-speaker__img {
+  scale: 1.018;
+}
+
 .c-speaker__media {
   overflow: clip;
   border-radius: 12px;
@@ -32,7 +29,9 @@
 }
 
 .c-speaker__img {
+  scale: 1;
   filter: grayscale(1);
+  transition: scale 0.2s ease-out;
 }
 
 .c-speaker__link {
@@ -44,19 +43,15 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(
-    to bottom,
-    var(--speaker-gradient-start) var(--gradient-stop),
-    var(--speaker-gradient-two) calc(100% - var(--gradient-stop))
-  );
+  background-color: var(--color-blue);
   z-index: 2;
   mix-blend-mode: color;
 
-  transition: --gradient-stop 0.2s ease-out;
+  transition: --speaker-gradient-stop 0.25s ease-out;
 }
 
 .c-speaker__link:hover::before {
-  --gradient-stop: 24%;
+  --speaker-gradient-stop: 0%;
 }
 
 .c-speaker__img {

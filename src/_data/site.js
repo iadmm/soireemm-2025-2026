@@ -5,6 +5,6 @@ export default {
   url: "https://soireemm.netlify.app/",
   registrations: true,
   registrationsUrl: "https://www.iad-arts.be",
-  eventDate: "2026/02/03",
+  eventDate: "2026/04/09",
   buildDate: new Date(),
 };
