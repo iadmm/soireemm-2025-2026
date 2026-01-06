@@ -10,7 +10,7 @@ permalink: index.html
 {% block content %}
   <div class="c-section">
     <div class="l-container">
-      
+
       <div class="l-split  l-split--half@md">
         <div>
           <h2 class="c-h1"><time datetime="{{ site.eventDate|dateMachine }}">{{ site.eventDate|dateNumeric }}</time></h2>
@@ -22,13 +22,13 @@ permalink: index.html
               datetime="{{ site.eventDate|dateMachine }}">
               {{ site.eventDate|dateFull }}
             </time><br>
-            IAD Blocry, Grande Salle<br>
             <time datetime="19:00">19h00</time> - <time datetime="23:00">23h00</time><br>
+            IAD Blocry, Grande Salle<br>
             Entrée gratuite
           </p>
           {% if site.registrations == true %}
             <p class="u-mbs-md">
-              <a 
+              <a
                 class="c-button"
                 href="{{ site.registrationsUrl }}">
                 Inscriptions
@@ -65,8 +65,8 @@ permalink: index.html
             {% if loop.last %}<ul>{% endif %}
           {% endfor %}
         </div>
-      </div>      
-      
+      </div>
+
     </div>
   </div>
 
@@ -84,7 +84,7 @@ permalink: index.html
           <blockquote class="c-quote__text">
             <p class="js-quote-text">J'ai beau avoir fait mon master à Jacquard, ils me laissent entrer chaque année ...</p>
           </blockquote>
-          <figcaption 
+          <figcaption
             class="c-quote__author js-quote-author">
             Clément D'Août
           </figcaption>
@@ -96,7 +96,7 @@ permalink: index.html
 
   <div class="c-section">
     <div class="l-container l-container--md">
-      
+
       {% for item in partners %}
         {% if loop.first %}<ul class="c-partners">{% endif %}
           <li>

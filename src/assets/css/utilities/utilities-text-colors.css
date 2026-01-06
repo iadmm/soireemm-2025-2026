@@ -1,0 +1,7 @@
+/* ===================================
+=text colors
+=================================== */
+
+.u-text-highlight {
+  color: var(--color-text-highlight);
+}

@@ -4,8 +4,9 @@
 
 a {
   --link-underline-color: hsl(from var(--color-accent) h s l / 60%);
+  --link-color: currentColor;
 
-  color: var(--color-accent);
+  color: var(--link-color);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.12lh;
@@ -13,6 +14,7 @@ a {
 
   &:hover,
   &:focus-visible {
+    --link-color: var(--color-accent);
     --link-underline-color: var(--color-accent);
   }
 }
