@@ -28,7 +28,7 @@
   --color-text-primary: var(--color-gray-700);
   --color-text-secondary: var(--color-gray-500);
 
-  --color-accent: var(--color-red);
-  --color-accent-light: var(--color-red-light);
-  --color-accent-dark: var(--color-red-dark);
+  --color-accent: var(--color-blue);
+  --color-accent-light: var(--color-blue-light);
+  --color-accent-dark: var(--color-blue-dark);
 }

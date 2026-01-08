@@ -10,16 +10,17 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 18px;
+  gap: 12px;
   padding: 12px 24px;
   line-height: 1;
   background-color: var(--button-surface);
   color: var(--button-text);
   border-radius: 999px;
   font-weight: 500;
-  font-stretch: 75%;
-  font-size: var(--fontsize-lg);
+  font-stretch: 80%;
+  font-size: var(--fontsize-md);
   text-decoration: none;
+  text-transform: uppercase;
 
   transition: background-color 0.2s ease-out;
 
