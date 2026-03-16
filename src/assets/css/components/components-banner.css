@@ -13,7 +13,7 @@
   --banner-anim-delay: 0.2s;
 
   display: grid;
-  grid-template-columns: minmax(48px, min(4vi, 90px)) minmax(0, 1fr);
+  grid-template-columns: minmax(24px, min(3vi, 60px)) minmax(0, 1fr);
 }
 
 .c-banner__title {

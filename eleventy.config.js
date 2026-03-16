@@ -2,7 +2,11 @@
 import { speakers } from "./src/_11ty/collections/speakers.js";
 
 // import filters
-import { dateMachine, dateNumeric, dateFull } from "./src/_11ty/filters/dates.js";
+import {
+  dateMachine,
+  dateNumeric,
+  dateFull,
+} from "./src/_11ty/filters/dates.js";
 
 /**
  * Export configuration (API)
